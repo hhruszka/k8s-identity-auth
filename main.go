@@ -16,7 +16,7 @@ import (
 )
 
 var (
-	host = "0.0.0.0"
+	host = "192.168.8.110"
 	path = "/v1/auth/kubernetes/login"
 	port = ":8222"
 )
