@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy go.mod and go.sum files to leverage Docker cache
 # This step ensures that dependencies are re-downloaded only if go.mod or go.sum changes
-COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go mod download
 
 # Copy the rest of the application source code
