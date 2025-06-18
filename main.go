@@ -18,7 +18,7 @@ import (
 var (
 	host = "192.168.8.110"
 	path = "/v1/auth/kubernetes/login"
-	port = ":8222"
+	port = "8222"
 )
 
 type AuthRequest struct {
