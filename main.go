@@ -62,7 +62,7 @@ func createRequest(ctx context.Context, serviceToken string) (*http.Request, err
 		return nil, err
 	}
 
-	req, err := http.NewRequestWithContext(ctx, "POST", fmt.Sprintf("https://%s%s", host, path), bytes.NewBuffer(buf))
+	req, err := http.NewRequestWithContext(ctx, "POST", fmt.Sprintf("https://%s:%s%s", host, port, path), bytes.NewBuffer(buf))
 	if err != nil {
 		return nil, err
 	}
